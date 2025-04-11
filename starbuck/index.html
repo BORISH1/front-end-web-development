@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <title>Document</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="style.css">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+          
+          <section>
+                    <div class="circle"></div>
+                    <header>
+                              <a href="#"><img src="./logo.jpg" alt="" class="logo"></a>
+                              <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="#">What's New</a></li>
+                                        <li><a href="#">Contact</a></li>
+                              </ul>
+                    </header>
+                    <div class="content">
+                              <div class="textbox">
+                                        <h2>It's not just coffee <br>It's <span>Starbucks </span></h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br> ea velit cumque debitis, autem non ipsum qu djlf jf <br>Labore, jjsjfj joj eo jrojiorj kjrejoijkgk j jlkfjor jbor<br>kfkfjjlhfguyfu</p>
+                                        <a href="#">Learn More</a>
+                              </div>
+                              <div class="imgBox">
+                                        <img src="./img1-removebg-preview.png" alt="" class="Starbucks" id="starbucks" height="400px" width="250px">
+
+                                       
+                                       
+                                       
+                                        
+                                       
+                              
+                                        
+                              </div>
+                    </div>
+                    <ul class="thumb">
+                              <li><img src="./77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" alt="" onclick="imgSlider('./77325-frappuccino-drink-chocolate-starbucks-matcha-white.png');changeCircleColor('#017143');"></li>
+                              <li><img src="./img1-removebg-preview.png" alt="" onclick="imgSlider('./img1-removebg-preview.png');changeCircleColor('#eb7495')"></li>
+                              <li><img src="./62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png" alt="" onclick="imgSlider('./62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png');changeCircleColor('#d752b1')"></li>
+                    </ul>
+                    <ul class="sci">
+                                <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>       
+                                <li>  <a href="#"><i class="fa-brands fa-twitter"></i></a></li>      
+                                <li>   <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+          </section>
+          <script type="text/javascript">
+                    function imgSlider(imagePath){
+                        document.querySelector('#starbucks').src = imagePath;
+                    }
+                
+                    function changeCircleColor(color){
+                        const circle = document.querySelector('.circle');
+                        circle.style.background = color;
+                    }
+                </script>
+                
+</body>
+</html>
